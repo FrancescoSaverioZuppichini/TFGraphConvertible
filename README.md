@@ -1,7 +1,7 @@
 
 # Serialize Class to TensorFlow Graph
 ### Francesco Saverio Zuppichini
-Would it be cool to automatically bind class fields to tensorflow variables in a graph and restore them without manually get each variable back from the name and name them?
+Would it be cool to automatically bind class fields to tensorflow variables in a graph and restore them without manually get each variable back from it?
 
 Image you have a `Model` class
 
