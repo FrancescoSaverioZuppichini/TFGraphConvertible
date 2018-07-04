@@ -20,8 +20,7 @@ class Model():
       from ._conv import register_converters as _register_converters
 
 
-Usually, you first **build** your model, then you **train** it. After that, you want to **get** from the saved graph the old variable without rebuild the whole model.
-
+Usually, you first **build** your model and then you **train** it. After that, you want to **get** from the saved graph the old variables without rebuild the whole model from scratch.
 
 ```python
 tf.reset_default_graph()
@@ -432,7 +431,7 @@ with tf.Session() as sess:
 
 
 ## Conclusion
-With this tutorial we have seen how to serialize a class and bind each field back to the correct tensor in the tensorflow graph. Be awere that you can store the `serialized_model` in `.json` format and load it directly where you need. In this way, you can directly create your model by using Object Oriented Programming and retrieve all the variales inside them without having to rebuild them.
+With this tutorial we have seen how to serialize a class and bind each field back to the correct tensor in the tensorflow graph. Be aware that you can store the `serialized_model` in `.json` format and load it directly where you need. In this way, you can directly create your model by using Object Oriented Programming and retrieve all the variales inside them without having to rebuild them.
 
 Thank you for reading
 
